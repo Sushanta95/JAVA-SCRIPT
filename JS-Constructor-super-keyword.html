@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Constructor using super keyword</title>
+</head>
+<body>
+     <script type="text/javascript">
+          //parent class
+     	class CompanyName{
+               constructor(){
+                    this.companyName = "Learnvern";
+               }
+          }
+
+          //child class
+          class Employee extends CompanyName{
+               constructor(id,name){
+                     super();
+                    this.id = id;
+                    this.name = name;
+               }
+          }
+          var emp = new Employee(210,"amit");
+          document.writeln(emp.id + " " + emp.name + " " + emp.companyName);
+     </script>
+</body>
+</html>

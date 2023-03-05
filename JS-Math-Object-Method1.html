@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Math  Object </title>
+	<style type="text/css">
+		h3{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+    <script type="text/javascript">
+    	/*Using Date()*/
+    	document.writeln("<h3>Math Methods</h3>");
+    	 
+    	 var num1 = -4;
+    	 function randomNumber(){
+    	 	return Math.random()*1000000;
+    	 }
+    	 /*abs()*/
+    	 document.writeln("<br>abs() of" + num1+ ":" + Math.abs(num1));
+    	 document.writeln("<br>abs() of 0: " + Math.abs(0));
+    	 document.writeln("<br>abs() of []: " + Math.abs([]));
+    	  document.writeln("<br>abs() of [2,7]: " + Math.abs([2,7]));
+    	   document.writeln("<br>abs() of null: " + Math.abs(null));
+    	    document.writeln("<br>abs() of empty: " + Math.abs());
+
+             /*ceil()*/
+    	     document.writeln("<br><br>ceil() of 4.5: " + Math.ceil(4.5));
+    	      document.writeln("<br>ceil() of 2.9: " + Math.ceil(2.9));
+    	       document.writeln("<br>ceil() of -4.1: " + Math.ceil(-4.1));
+    	        document.writeln("<br>ceil() of -1.3: " + Math.ceil(-1.3));
+
+                  /*exp()*/
+    	         document.writeln("<br><br>exp() of 4: " + Math.exp(4));
+
+              /*floor()*/
+    	     document.writeln("<br><br>floor() of 4.5: " + Math.floor(4.5));
+    	      document.writeln("<br>floor() of 2.9: " + Math.floor(2.9));
+    	       document.writeln("<br>floor() of -4.1: " + Math.floor(-4.1));
+    	        document.writeln("<br>floor() of -1.3: " + Math.floor(-1.3));
+
+                 /*log()*/
+    	         document.writeln("<br><br>log() of 4: " + Math.log(4));
+
+                  /*max()*/
+    	          document.writeln("<br><br>max() of 4,5,6: " + Math.max(4,5,6));
+
+                   /*min()*/
+    	           document.writeln("<br><br>min() of 4,5,6: " + Math.min(4,5,6));
+
+                   /*pow()*/
+    	           document.writeln("<br><br>2 to the power 3 is: " + Math.pow(2,3));
+    	           document.writeln("<br>2 to the power 4 is: " + Math.pow(2,4));
+    	           document.writeln("<br>2 to the power 5 is: " + Math.pow(2,5));
+    	           document.writeln("<br>2 to the power 6 is: " + Math.pow(2,6));
+    	           document.writeln("<br>2 to the power 7 is: " + Math.pow(2,7));
+
+                    /*Create OTP using floor()*/
+    	           document.writeln("<br><br>Create an OTP using Math.random(): " + Math.floor(randomNumber()));
+
+                     /*random()*/
+    	            document.writeln("<br><br>random number between 0 and 1 : " + Math.random());
+
+                     /*round()*/
+    	            document.writeln("<br><br>round() of 4.9 is: " + Math.round(4.9))
+    	            document.writeln("<br>round() of -4.2 is: " + Math.round(-4.2));;
+
+                      /*sign()*/
+    	             document.writeln("<br><br>sign() of 4 is: " + Math.sign(4))
+    	            document.writeln("<br>sign() of -5 is: " + Math.sign(-5));;
+    	            document.writeln("<br>sign() of 0 is: " + Math.sign(0));;
+
+                      /*sqrt()*/
+    	             document.writeln("<br><br>sqrt() of 9 is: " + Math.sqrt(9))
+    	            document.writeln("<br>sqrt() of 5 is: " + Math.sqrt(5));;
+
+                     /*cbrt*/
+    	             document.writeln("<br><br>cbrt() of 9 is: " + Math.cbrt(9))
+    	            document.writeln("<br>cbrt() of 81 is: " + Math.cbrt(81));;
+    	            
+                     /*trunc()*/
+    	             document.writeln("<br><br>trunc() of 4.9 is: " + Math.trunc(4.9))
+    	            document.writeln("<br>trunc() of 9.2 is: " + Math.trunc(9.2));;
+    </script>
+</body>
+</html>

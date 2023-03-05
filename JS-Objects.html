@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example of JavaScaript Objects</title>
+</head>
+<body>
+      <script type="text/javascript">
+      	/* Craeting an object using Object Literals*/
+
+      	var person = {
+      		firstName: "Sushanta",
+      		lastName: "Mangal",
+      		age:25,
+      	}; 
+      	document.writeln("Object details of a person object:" +person.firstName+ " "+ person.lastName+ " "+ person.age + "<br>");
+
+      	/*Creating an object using new keyword (Instance of an Object)*/
+
+      	var emp = new Object();
+
+      	emp.id = 1;
+      	emp.name = "Bapun";
+      	emp.salary = "20000";
+
+      	document.writeln("Object details of an emp object:" )
+      	for(value in emp){
+      		document.writeln(emp[value] + " ");
+      	}
+                
+      	/*Creating an object using Object Constructor*/
+      	function employee(id,name,salary){
+      		this.id = id;
+      		this.name = name;
+      		this.salary = salary;
+      	}
+            var e = new employee(2,"Bapun", 60000);
+            document.writeln(" <br> Object details of employee object: ")
+            for(value in e){
+      		document.writeln(e[value] + " ");
+      	}
+      </script>
+</body>
+</html>

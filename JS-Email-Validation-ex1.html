@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Email Validation example 1</title>
+	<style type="text/css">
+		h3{
+			text-align: center;
+			background-color: lightgreen;
+		}
+	</style>
+</head>
+<body>
+    <script type="text/javascript">
+    	function validateemail(){
+    	   var email = document.myform.email.value;
+    	   var atposition = email.indexOf("@");
+    	   var dotposition = email.indexOf(".");
+
+    	   if(atposition < 1 ||
+    	   	   dotposition < atposition + 2 ||
+    	   	     dotposition + 2 >= email.length){
+    	   	alert("Please enter a valid Email");
+    	   return false;
+    	   }
+    	}
+    </script>
+    <h3>Registration Form</h3>
+    <form name="myForm" method = "post" onsubmit="return validateform()">
+    	 Email: <input type="text" name="email"><br><br>
+    	<input type="Submit" value="Submit">
+    </form>
+</body>
+</html>

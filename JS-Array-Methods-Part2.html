@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example of Array Methods Part 2</title>
+</head>
+<body>
+      <script type="text/javascript">
+       /*Array fill() Method*/
+             var languages = ["as","er","3","4"];
+             var result1 = languages.fill("Bapun");
+             document.writeln("Array after Performing fill():" + result1);
+
+             var result2 = languages.fill("fd",0,3);
+              document.writeln("<br>Array after Performing fill() on first position: " + result2);
+
+               /*Array form() Method*/
+               var fromArray = Array.from("Hello");
+               document.writeln("<br>Array after applying from():" + fromArray)
+               var func = function(){
+                     document.writeln(Array.from(arguments));
+               }
+                document.writeln("<br>Array after applying from() on function:");
+                func("as","er","3","4"); 
+
+
+                 /*Array filter() Method*/
+                document.write("<br>");
+                 document.write("<br>");
+               var num = [31,35,24,65,34];
+              function check(value){
+                     return value > 30
+              } 
+               document.writeln("num array after filter():"+num.filter(check));
+
+                 document.write("<br>");
+                 document.write("<br>");
+
+              /*Array find() Method*/
+              var findArray = num.find(x=> x<30);
+              document.writeln("num array after find():"+ findArray);
+
+              document.write("<br>");
+              document.write("<br>");
+
+              /*Array findIndex() Method*/
+              var findIndexArray = num.findIndex(x=> x<30);
+              document.writeln("num array after findIndex():"+ findIndexArray);
+
+
+                document.write("<br>");
+              document.write("<br>");
+
+              /*Array findEach() Method*/
+              document.writeln("num array after forEach():");
+              num.forEach(function(fetch){
+                     document.write(fetch + 2)
+              });
+   </script>
+</body>
+</html>

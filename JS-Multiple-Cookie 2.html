@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Multiple cookie</title>
+</head>
+<body>
+     Name: <input type="text" id="name"><br>
+     Email: <input type="text" id="email"><br>
+     Company Name: <input type="text" id="companyName">
+
+     <input type="button" value="Set Cookie" onclick="setCookie()">
+      <input type="button" value="Get Cookie" onclick="getCookie()">
+
+     <script type="text/javascript">
+     	function setCookie(){
+     		//Taken 3 diff cookies and we store respective value with in the cookie
+     		var object1 = {};
+               object1.name = document.getElementById('name').value;
+                object1.email = document.getElementById('email').value;
+                 object1.companyName = document.getElementById('companyName').value;
+     	   	
+               var jasonString = JSON.stringify(object1);
+               document.cookie = jasonString;	             
+     	}
+     	  function getCookie(){
+     	  	if(document.cookie.length != 0 ){
+     	  		var object2 = JSON.parse(documnet.cookie);
+                    alert("name=" + object2.name + "\nEmail=" + object2.email + "\nCompany Name=" + object2.companyName);
+     	  	}
+     	  	else{
+     	  		alert("Cookie is not set yet");
+     	  	}
+     	  }
+     </script>
+</body>
+</html>

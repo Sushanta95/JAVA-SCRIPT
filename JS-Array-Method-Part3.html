@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example of Array Methods Part 3</title>
+</head>
+<body>
+      <script type="text/javascript">
+       /*Array include() Method*/
+        var arr1 = ["c","c++","java","html"];
+        var arr2 = [20,25,30,45];
+        document.writeln("includes():" + arr1.includes("java"));   
+
+        /*Array indexOf() Method*/
+        document.writeln("<br>")
+         document.writeln("indexOf():" + arr1.indexOf("java"));
+          document.writeln("<br>")
+          document.writeln("indexOf():" + arr1.indexOf("Bapun")); 
+
+
+          /*Array isArray() Method*/
+        document.writeln("<br>")
+         document.writeln("isArray():" + Array.isArray(1,2,4,5));
+
+          document.writeln("<br>")
+         document.writeln("isArray():" + Array.isArray(arr1)); 
+
+
+          /*Array join() Method*/
+        document.writeln("<br>")
+         document.writeln("join():" + arr1.join("/")); 
+
+          /*Array keys() Method*/
+        document.writeln("<br>")
+        var keyArray = arr1.keys();
+         document.writeln("To checkn elemenmts in keyarray array: "+ keyArray + "<br>");
+         document.writeln("values in keyArray is: <br>");
+         for(k of keyArray){
+            document.writeln(k + "<br>");
+
+         }  
+
+
+             /*Array lastIndexOf() Method*/
+        document.writeln("<br>")
+         document.writeln("lastIndexOf():" + arr1.lastIndexOf("java"));
+
+
+             /*Array map() Method*/
+        document.writeln("<br>");
+        var mapArray = arr2.map(x=> x/5);
+         document.writeln(mapArray);        
+   </script>
+</body>
+</html>

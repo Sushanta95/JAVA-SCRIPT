@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Static Method 4</title>
+</head>
+<body>
+    <script type="text/javascript">
+    	class Test{
+    		constructor(){
+    			document.writeln(Test.display() + "<br>");
+    			document.writeln(this.constructor.display());
+    		}
+    		static display(){
+    			return "static method-1 is invoked";
+    		}
+    }
+    var t = new Test();
+    	    	
+    </script>
+</body>
+</html>

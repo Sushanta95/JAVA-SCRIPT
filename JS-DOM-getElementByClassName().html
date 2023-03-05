@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM document.getElementsByClassName()</title>
+</head>
+<body>
+    
+   <div class="abc">
+        This is abc 1st Time.
+   </div>
+
+    <div class="abc">
+        This is abc 2nd time.
+   </div>
+
+    <div class="abc">
+        This is aba 3rd time.
+   </div>
+
+    <script type="text/javascript">
+          var x = document.getElementsByClassName('abc');
+          for(value of x){
+               alert(value.innerText);
+          }
+                   
+     </script>
+</body>
+</html>

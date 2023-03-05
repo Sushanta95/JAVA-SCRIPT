@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM document.getElementsByName()</title>
+</head>
+<body>
+    
+  <form>
+      male:<input type="radio" name="gender" value="male">
+      female:<input type="radio" name="gender" value="female">
+
+      <input type="button" onclick="totalelements()" value="Total Genders">
+  </form>
+
+    <script type="text/javascript">
+         function totalelements(){
+            var allgenders = document.getElementsByName("gender");
+            alert("Total Genders:" + allgenders.length);
+         }       
+     </script>
+</body>
+</html>

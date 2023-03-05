@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Date Object Part 2</title>
+</head>
+<body>
+    <script type="text/javascript">
+    	 var d1 = new Date();
+    	 var day = "";
+    	 var month = "";
+
+    	 switch(d1.getDay()){
+    	 	 case 0:
+    	 	 	day = "Sunday";
+    	 	 	break;
+    	 	 case 1:
+    	 	 	day = "Monday";
+    	 	 	break;
+    	 	 case 2:
+    	 	 	day = "Tuesday";
+    	 	 	break;
+    	 	 case 3:
+    	 	 	day = "Wednesday";
+    	 	 	break;
+    	 	 case 4:
+    	 	 	day = "Thursday";
+    	 	 	break;
+    	 	 case 5:
+    	 	 	day = "Friday";
+    	 	 	break;
+    	 	 case 6:
+    	 	 	day = "Saturday";
+    	 	 	break;
+    	 }
+
+    	 switch(d1.getMonth()){
+    	 	 case 0:
+    	 	 	month = "Jan";
+    	 	 	break;
+    	 	 case 1:
+    	 	 	month = "Feb";
+    	 	 	break;
+    	 	 case 2:
+    	 	 	month = "Mar";
+    	 	 	break;
+    	 	 case 3:
+    	 	 	month = "Apr";
+    	 	 	break;
+    	 	 case 4:
+    	 	 	month = "May";
+    	 	 	break;
+    	 	 case 5:
+    	 	 	month = "Jum";
+    	 	 	break;
+    	 	 case 6:
+    	 	 	month = "July";
+    	 	 	break;
+    	 	 case 7:
+    	 	 	month = "Aug";
+    	 	 	break;
+    	 	 case 8:
+    	 	 	month = "Sep";
+    	 	 	break;
+    	 	 case 9:
+    	 	 	month = "Oct";
+    	 	 	break;
+    	 	 case 10:
+    	 	 	month = "Nov";
+    	 	 	break;
+    	 	 case 11:
+    	 	 	month = "Dec";
+    	 	 	break;
+    	 }
+    	 document.writeln("Today's Day is: " + day + "<br>");
+    	 document.writeln("Today's Date is: " + d1.getDate()+ "<br>");
+    	  document.writeln("It's the Month of: " + month + "<br>");
+    	   document.writeln("This Hour is: " + d1.getHours() + "<br>");
+    	    document.writeln("Minutes right now is: " + d1.getMinutes() + "<br>");
+    	     document.writeln("Current Second is: " + d1.getSeconds() + "<br>");
+    	      document.writeln("Today's Date is: " + d1.getMilliseconds() + "<br>");
+    	       document.writeln("Today's Date is: " + d1.getUTCFullYear() + "<br>");
+    	       document.writeln("Today's Date is: " + d1.toDateString() + "<br>");
+    	         document.writeln("Today's Date is: " + d1.toString() + "<br>");
+    	           document.writeln("Today's Date is: " + d1.toTimeString() + "<br>");
+    	        
+    </script>
+</body>
+</html>

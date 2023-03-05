@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Promise_chaining-1</title>
+</head>
+<body>
+   <script type="text/javascript">
+   	   //How to acheive promise chaining is written below
+   	    new Promise(function(resolve,reject){
+   	    	//we can write below line in this way also i.e 
+   	    	//setTimeout( ()=> {resolve(1)},2000);
+   	    	//instead the function word we can write => this.
+   	    	setTimeout(function(){resolve(1) },2000);
+   	    }).then(function(value){
+   	    	alert(value);
+   	    	return value*2;
+   	    }).then(function(value){
+   	    	alert(value);
+   	    	return value*3;
+   	    }).then(function(value){
+   	    	alert(value);
+   	    	return value*4;
+   	    }).then(function(value){
+   	    	alert(value);
+   	    })
+   </script>
+</body>
+</html>

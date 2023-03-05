@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example of Array Methods Part 5</title>
+</head>
+<body>
+      <script type="text/javascript">
+       /*Array sort() Method*/
+       var num = [4,6,8,1,2,3,7]; 
+       var language = ["html","css","java","Bootstrap","python"];
+       var arr1 = [4,6,8,1,2,3,7]; 
+
+       document.writeln("Sorted Number array:" + num.sort() + "<br>");
+       document.writeln("Sorted Srting array:" + language.sort() + "<br>");
+       document.writeln("Find out the minimum number from the array: " + arr1);
+       var result = arr1.sort();
+       document.writeln("is :" + result[0]);
+       document.writeln("<br>Find out the maximum number from the array: " + arr1);
+       var result = arr1.sort();
+       document.writeln("is :" + result[result.length - 1]);
+
+        /*Array splice() Method : array.splice(start,delete, ...element)*/
+       var weekdays = ["Monday","Tuesday","Thursday","Friday"];
+       var addWednesday = weekdays.splice(2,0,"Wednesday");
+        document.writeln("<br> Weekdays Array: " + weekdays);
+
+       var weekdays = ["Monday","Tuesday","Saturday","Sunday","Thursday","Friday"];
+        document.writeln("<br> Incorerect Weekdays Array: " + weekdays);
+
+        var addWednesday = weekdays.splice(2,2,"Wednesday");
+        document.writeln("<br> Correct Weekdays Array: " + weekdays);
+
+        var removedContent = weekdays.splice(2,2,"wednesday");
+         document.writeln("<br> Removed content from Weekdays Array: " + removedContent);
+                 
+        /*Array toLocaleString() Method*/
+        var weekdays = ["Monday","Tuesday","Wednesday","Thursday",
+                            "Friday","Saturday","Sunday"];
+        var str = weekdays.toLocaleString();
+        document.writeln("<br><br> weekdays in string Format:" + str);
+        console.log(str);
+        var arr2 = ["a",1,new Date("7 jan 2020 14:45:34 UTC")];
+        var str = arr2.toLocaleString("en",{timeZone: "UTC"});
+        console.log("Converted Elements to string is: " + str);
+
+           /*Array toString() Method*/  
+           var weekdays = ["Monday","Tuesday","Wednesday","Thursday",
+                            "Friday","Saturday","Sunday"]; 
+            document.writeln("<br><br> weekdays in string Format:" + weekdays.toString());          
+   </script>
+</body>
+</html>

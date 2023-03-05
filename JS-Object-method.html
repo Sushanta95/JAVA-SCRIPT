@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example of Object Method</title>
+</head>
+<body>
+   <h2>Creating Method in object</h2>
+   <script type="text/javascript">
+            function employee(id,name,salary){
+            this.id = id;
+            this.name = name;
+            this.salary = salary;
+
+            this.updateSalary = updateSalary;
+            function updateSalary(newSalary){
+               this.salary = newSalary;
+            }
+         }
+            var e = new employee(2,"Bapun", 60000);
+            document.writeln("salary of " + e.name + "is : " + e.salary);
+           
+            e.updateSalary(1000000);
+            document.writeln(" <br>Updated Salary of " + e.name + "is: " + e.salary);
+                    
+    </script>
+          
+</body>
+</html>

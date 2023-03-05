@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Prototype</title>
+</head>
+<body>
+    <script type="text/javascript">
+    	function Employee(firstName,lastName){
+    		this.firstName = firstName;
+    		this.lastName = lastName;
+    	}
+    	//method created
+    	Employee.prototype.fullName = function(){
+    		return this.firstName + " " + this.lastName;
+    	}
+    	var Employee1 = new Employee("a","b");
+        var Employee2 = new Employee("c","d");
+
+        document.writeln(Employee1.fullName() + "<br>");
+        document.writeln(Employee2.fullName() + "<br>");
+    </script>
+</body>
+</html>

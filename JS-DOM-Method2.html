@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM Methods</title>
+</head>
+<body>
+     <script type="text/javascript">
+     	function showNumber(){
+               var telephoneNumber = document.getElementById("telephoneNumber").value;
+               alert("Telephone Number is :" + telephoneNumber);
+          }
+     </script>
+    <form>
+         Enter Phone Number: <input type="text" id="telephoneNumber">
+         <br><br>
+      <input type="button" value="Show Contact Number" onclick="showNumber()">
+    </form>
+</body>
+</html>

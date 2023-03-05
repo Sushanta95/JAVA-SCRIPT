@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Numbers</title>
+    <style type="text/css">
+        h3{
+            text-align: center;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+    	  var x = 2;
+          var y = 2.33;
+          var z = 13e2;
+          var n = new Number(16);
+           document.writeln("<h3>JavaScript Constants</h3>");
+
+           document.writeln("<h4>MIN_VALUE</h4>");
+    	   document.writeln("The minimum number in JavaScript is: " + Number.MIN_VALUE);
+
+            document.writeln("<h4>MAX_VALUE</h4>");
+           document.writeln("The minimum number in JavaScript is: " + Number.MAX_VALUE);
+
+            document.writeln("<h4>POSITIVE_INFINITY</h4>");
+           document.writeln("The positive infinity number in JavaScript is: " + Number.POSITIVE_INFYNITY);
+
+             document.writeln("<h4>NEGATIVE_INFINITY</h4>");
+           document.writeln("The positive infinity number in JavaScript is: " + Number.NEGATIVE_INFYNITY);
+
+            document.writeln("<h4>NAN</h4>");
+           document.writeln("The positive infinity number in JavaScript is: " + Number.NAN);
+
+            document.writeln("<br><br>to check 'g' is a number: " + Number.isNaN('g'));
+             document.writeln("<br>to check '2' is a number: " + Number.isNaN('2'));
+             document.writeln("<br>to check '2' is a number: " + Number.isNaN("hello"));
+    </script>
+</body>
+</html>

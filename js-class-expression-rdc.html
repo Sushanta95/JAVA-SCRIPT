@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Class Expression by Re-Declaring a class</title>
+</head>
+<body>
+     <script type="text/javascript">
+
+     	//-------------------------------
+     	var emp = class{
+     		constructor(id,name){
+     			this.id = id;
+     			this.name = name;
+     		}
+     		details(){
+     			document.writeln(this.id + " " + this.name + "<br>");
+     		}
+     	}
+
+     	var object1 = new emp(1, "ABC");
+     	var object2 = new emp(2, "DEF");
+     	object1.details();
+     	object2.details();
+
+
+     	//--------------------------------
+     	var emp = class{
+     		constructor(id,name){
+     			this.id = id;
+     			this.name = name;
+     		}
+     		details(){
+     			document.writeln(this.id + " " + this.name + "<br>");
+     		}
+     	}
+     	var object3 = new emp(3, "GHI");
+     	var object4 = new emp(4, "JKL");
+     	object3.details();
+     	object4.details();
+
+
+
+          //--------------------------------
+     	var emp = class{
+     		constructor(id,name){
+     			this.id = id;
+     			this.name = name;
+     		}
+     		details(){
+     			document.writeln(this.id + " " + this.name + "<br>");
+     		}
+     	}
+
+     	var object5 = new emp(5, "MNO");
+     	var object6 = new emp(6, "PQR");
+     	object5.details();
+     	object6.details();
+
+
+     	//--------------------------------
+     	var emp = class{
+     		constructor(id,name){
+     			this.id = id;
+     			this.name = name;
+     		}
+     		details(){
+     			document.writeln(this.id + " " + this.name + "<br>");
+     		}
+     	}
+     	var object7 = new emp(7, "STU");
+     	var object8 = new emp(8, "VWX");
+     	object7.details();
+     	object8.details();
+     </script>
+</body>
+</html>

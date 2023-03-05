@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example of Array Methods</title>
+</head>
+<body>
+      <script type="text/javascript">
+             var arr1 = ["1","2","3","4"];
+             var arr2 = ["5","6","7"];
+             var arr3 = ["80","90","60"];
+             var arr4 = [11,22,[33,44],[55],[12,45,76]];
+             var arr5 = [2,4,6,8,10];
+
+             function check(value){
+                  return value>50;
+             }
+
+             document.writeln("<h3>concat()</h3>");
+             var concatenatedArray = arr1.concat(arr2);
+             document.writeln("concatenated Array:" + concatenatedArray);
+
+             document.writeln("<h3>copyWithin()</h3>");
+             var copyWithinArray = arr1.copyWithin(0,1,2);
+             document.writeln("Copied Array:" + copyWithinArray);
+
+              document.writeln("<h3>entries()</h3>");
+             var entriesArray = arr1.entries();
+            for(value of entriesArray){
+                   document.writeln(value + "<br>");
+            }
+      	 
+
+             document.writeln("<h3>every()</h3>"); 
+             document.writeln("Check for every element in array aar3 if its > 30 :" + arr3.every(check)); 
+
+
+             document.writeln("<h3>flat()</h3>"); 
+             var flatArray = arr4.flat();
+              document.writeln("Flatted Array :" + flatArray); 
+
+               document.writeln("<h3>flatMap()</h3>"); 
+               var flatMapArray = arr5.flatMap(x => [x/2]);
+               document.writeln("FlatMapped Array :" + flatMapArray);     
+   </script>
+</body>
+</html>

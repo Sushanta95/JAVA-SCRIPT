@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AddEventListener() Multiple Click</title>
+	
+</head>
+<!--on click event -->
+<button id = "clickButton" onclick="changeBackground();updateLine1()">Click Me</button>
+ <p id="line1"></p>
+  <p id="line2"></p>
+	<script type="text/javascript">
+		// click event bt aaEventListener
+		
+		// document.getElementById("clickButton").addEventListener("click",changeBackground);
+		// document.getElementById("clickButton").addEventListener("click",updateLine1);
+		// document.getElementById("clickButton").addEventListener("click",updateLine2);
+              function changeBackground(){
+              	document.body.style.background = "yellow";
+              }
+               function updateLine1(){
+                         document.getElementById("line1").innerHTML = "Welcome to Learnvern";
+              }
+               function updateLine2(){
+              	           document.getElementById("line2").innerHTML = "Welcome to Learnvern 2";
+              }
+   </script>
+</body>
+</html>

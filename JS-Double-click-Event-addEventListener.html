@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Double click Event using addEventListener() Method</title>
+	<style type="text/css">
+		   h2,p1{
+		   	text-align: center;
+		   	color: blue;
+		   	background-color: lightgreen;
+		   	margin-left: 10px;
+		   	margin-right: 10px;
+		   	padding: 10px;
+		  }
+	</style>
+</head>
+<body>
+	<h2 id = "header1">Double Click on this Heading</h2>
+	<p id = "p1"></p>
+  <script type="text/javascript">
+  	document.getElementById("header1").addEventListener("dblclick", onDoubleClick);
+  	function onDoubleClick(){
+  		document.getElementById("p1").innerHTML = "This is Learnvern!";
+  	}
+  	
+  </script>
+</body>
+</html>
